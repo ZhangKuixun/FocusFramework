@@ -13,7 +13,7 @@ import java.util.List;
  */
 public abstract class CommonRecyclerViewAdapter<T> extends RecyclerView.Adapter<CommonRecyclerViewHolder> {
     protected Context mContext;
-    private List<T> mDatas = new ArrayList<>();
+    private List<T> mDatas = new ArrayList<T>();
 
     public Context getContext() {
         return mContext;

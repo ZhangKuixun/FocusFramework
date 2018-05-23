@@ -24,7 +24,7 @@ public class LayoutUtils {
      * @return view列表
      */
     public static List<View> getAllChildViews(View view) {
-        List<View> allChildren = new ArrayList<>();
+        List<View> allChildren = new ArrayList<View>();
         if (view instanceof ViewGroup) {
             ViewGroup vp = (ViewGroup) view;
             for (int i = 0; i < vp.getChildCount(); i++) {

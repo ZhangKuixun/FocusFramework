@@ -15,9 +15,9 @@ public class MainActivity2 extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         setTitle("MainActivity");
-        View activity_main = findViewById(R.id.activity_main);
-        mTvSelect_mainActivity = (TextView) findViewById(R.id.tvSelect_mainActivity2);
-        mTvFocus_mainActivity = (TextView) findViewById(R.id.tvFocus_mainActivity2);
+        View activity_main = findViewById(R.id.activity_main2);
+        mTvSelect_mainActivity = findViewById(R.id.tvSelect_mainActivity2);
+        mTvFocus_mainActivity = findViewById(R.id.tvFocus_mainActivity2);
         activity_main.getViewTreeObserver().addOnGlobalFocusChangeListener(new ViewTreeObserver.OnGlobalFocusChangeListener() {
             @Override
             public void onGlobalFocusChanged(final View oldFocus, final View newFocus) {

@@ -1,9 +1,9 @@
 *.iml
 .gradle
 .idea
-/app/.gitignore
+local.properties
 /app/proguard-rules.pro
 .DS_Store
 /build
 /captures
-.externalNativeBuild
+

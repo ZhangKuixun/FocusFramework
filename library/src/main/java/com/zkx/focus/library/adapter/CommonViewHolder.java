@@ -262,10 +262,9 @@ public class CommonViewHolder {
      * @param drawable
      * @return
      */
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     public CommonViewHolder setBackground(int viewId, Drawable drawable) {
-        View view = getView(viewId);
-        view.setBackground(drawable);
+        ImageView view = getView(viewId);
+        view.setBackgroundDrawable(drawable);
         return this;
     }
 
