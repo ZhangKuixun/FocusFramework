@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2013 Lucas Rocha
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="TVRecyclerView">
+        <!--布局方向-->
+        <attr name="android:orientation" tools:ignore="ResourceName"/>
+        <!--管理类-->
+        <attr name="tv_layoutManager" format="string"/>
+        <!--列-->
+        <attr name="tv_numColumns" format="integer"/>
+        <!--行-->
+        <attr name="tv_numRows" format="integer"/>
+        <!---->
+        <attr name="tv_laneCountsStr" format="string"/>
+        <!--自动滚动-->
+        <attr name="tv_isIntelligentScroll" format="boolean"/>
+        <!--选中的Item距离开始的偏移量-->
+        <attr name="tv_selectedItemOffsetStart" format="dimension"/>
+        <!--选中的Item距离结束的偏移量-->
+        <attr name="tv_selectedItemOffsetEnd" format="dimension"/>
+        <!--设置选中的Item居中-->
+        <attr name="tv_selectedItemIsCentered" format="boolean"/>
+        <!--是否是菜单-->
+        <attr name="tv_isMenu" format="boolean"/>
+        <!--选择第一个可见位置-->
+        <attr name="tv_isSelectFirstVisiblePosition" format="boolean"/>
+        <!--预先加载更多的数量-->
+        <attr name="tv_loadMoreBeforehandCount" format="integer"/>
+        <!--优化布局-->
+        <attr name="tv_optimizeLayout" format="boolean"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="TVFrameLayout">-->
+        <!--&lt;!&ndash;&lt;!&ndash;列数&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;<attr name="tv_row" format="integer"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;行数&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;<attr name="tv_column" format="integer"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;外边距&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;<attr name="tv_margin" format="dimension"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<attr name="tv_marginLeft" format="dimension"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<attr name="tv_marginRight" format="dimension"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<attr name="tv_marginTop" format="dimension"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<attr name="tv_marginBottom" format="dimension"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;内边距&ndash;&gt;-->
+        <!--<attr name="tv_padding" format="dimension"/>-->
+        <!--<attr name="tv_paddingLeft" format="dimension"/>-->
+        <!--<attr name="tv_paddingRight" format="dimension"/>-->
+        <!--<attr name="tv_paddingTop" format="dimension"/>-->
+        <!--<attr name="tv_paddingBottom" format="dimension"/>-->
+    <!--</declare-styleable>-->
+</resources>

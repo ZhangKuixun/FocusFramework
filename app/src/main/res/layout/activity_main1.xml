@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zkx.focus.myapplication.MainActivity1">
+
+    <com.zkx.focus.library.widget.viewGroup.TVLinearLayout
+        android:id="@+id/tvLinerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1_MainActivity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"/>
+
+        <Button
+            android:id="@+id/btn2_MainActivity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"/>
+
+        <Button
+            android:id="@+id/btn3_MainActivity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"/>
+
+        <Button
+            android:id="@+id/btn4_MainActivity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"/>
+
+        <Button
+            android:id="@+id/btn5_MainActivity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"/>
+    </com.zkx.focus.library.widget.viewGroup.TVLinearLayout>
+
+    <com.zkx.focus.library.widget.viewGroup.TVRecyclerView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:spanCount="4"
+        app:tv_layoutManager="V7GridLayoutManager"/>
+
+</LinearLayout>
