@@ -1,5 +1,22 @@
 ## 创建控件+焦点移动
 
+* 使用：
+```
+root/build.gradle:
+allprojects {
+	repositories {
+		maven { url 'https://jitpack.io' }
+	}
+}
+
+app/build.gradle:
+dependencies {
+	 implementation 'com.github.ZhangKuixun:FocusFramework:1.0'
+}
+```
+
+***
+
 ### 1.前置条件：
 * 服务器整体页面配置数据：
 ```
@@ -26,28 +43,28 @@
 		    public List<Composition> like;
 
 		(2)返回参数转json格式：
-			页面1：
-			{
-				页面1-控件1：
-				{wCellNumber:10,hCellNumber:10,xStart=0,yStart=0,link:{
-					页面2-控件1：
-					wCellNumber:80,hCellNumber:80,xStart=0,yStart=0,link:{
-					}
-					页面2-控件2：
-					wCellNumber:20,hCellNumber:20,xStart=81,yStart=0,link:{
-					}
-					页面2-控件3：
-					wCellNumber:20,hCellNumber:20,xStart=81,yStart=21,link:{
-					}
-				}}
-				页面1-控件2：
-				{wCellNumber:10,hCellNumber:10,xStart=11,yStart=11,link:{
-				}}
-			}
+		页面1：
+		{
+			页面1-控件1：
+			{wCellNumber:10,hCellNumber:10,xStart=0,yStart=0,link:{
+				页面2-控件1：
+				wCellNumber:80,hCellNumber:80,xStart=0,yStart=0,link:{
+				}
+				页面2-控件2：
+				wCellNumber:20,hCellNumber:20,xStart=81,yStart=0,link:{
+				}
+				页面2-控件3：
+				wCellNumber:20,hCellNumber:20,xStart=81,yStart=21,link:{
+				}
+			}}
+			页面1-控件2：
+			{wCellNumber:10,hCellNumber:10,xStart=11,yStart=11,link:{
+			}}
+		}
 
-			json参数解释：
-			后台计算“返回参数”的屏幕基准：1280*720。
-			移动端和服务器约定单元格的宽和高：wCell=12.8f,hCell=7.2f。
+		json参数解释：
+		后台计算“返回参数”的屏幕基准：1280*720。
+		移动端和服务器约定单元格的宽和高：wCell=12.8f,hCell=7.2f。
 ```
 * 控件库：TVButton,TVImageView,	TextView
 
